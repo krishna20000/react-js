@@ -8,9 +8,10 @@ export default function MainApp() {
   return (
     <div style={{
       backgroundColor: bgColor,
-      minHeight: "100vh",
+      height: "100vh",
       padding: "20px",
-      transition: "background-color 0.3s ease"
+      transition: "background-color 0.3s ease",
+      margin: "0 auto"
     }}>
       <h2>Background Changer</h2>
       <ColorPicker />

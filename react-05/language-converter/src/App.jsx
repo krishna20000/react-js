@@ -1,6 +1,7 @@
 import React from 'react'
+import { Drop } from './Drop'
 
-import Drop from './Drop'
+
 
 const App = () => {
   return (

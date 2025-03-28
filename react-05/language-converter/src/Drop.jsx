@@ -2,7 +2,7 @@ import React, { createContext, useState } from 'react'
 import Display from './Display'
 export const langContext=createContext()
 
-function Drop() {
+export function Drop() {
     const [select,setSelectedLang]=useState("यह हिंदी है")
 
     const handelChange=(e)=>{
@@ -15,13 +15,13 @@ function Drop() {
     <option value="यह हिंदी है">Hindi</option>
     <option value="this is english">English</option>
     <option value="हा मराठी आहे">marathi</option>
+    <option value="यह गुजराती है">Gujrati</option>
    </select>
    <br />
 <langContext.Provider value={select}>
    <Display/>
-   </langContext.Provider>
+  </langContext.Provider>
    </>
   )
 }
 
-export default Drop

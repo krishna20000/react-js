@@ -1,15 +1,13 @@
-import { CartProvider } from "./CartContext";
-import InputBox from "./InputBox";
-import CartList from "./CartList";
+import React from 'react';
+import { CartProvider } from './CartContext';
 
-export default function App() {
+const App = () => {
   return (
-    <CartProvider> {/* Wraps all components to provide access to cart data */}
-      <div>
-        <h2>Shopping Cart</h2>
-        <InputBox />  {/* Can access addItem from context */}
-        <CartList />  {/* Can access cart & removeItem from context */}
-      </div>
-    </CartProvider>
+    <div>
+      
+      <CartProvider />
+    </div>
   );
-}
+};
+
+export default App;
