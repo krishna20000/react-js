@@ -3,14 +3,11 @@ import MainApp from "./MainApp";
 
 export default function App() {
   return (
-    <ThemeProvider>
-      <BackgroundWrapper />
+    <ThemeProvider> 
+      <MainApp /> 
     </ThemeProvider>
+     
   );
 }
 
-function BackgroundWrapper() {
-  return (
-    <MainApp />
-  );
-}
+
